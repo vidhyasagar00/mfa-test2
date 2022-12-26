@@ -1,0 +1,18 @@
+{
+   "version":"001",
+   "applicationName":"r-mfa",
+   "applicationUUID":"841b7452-cc15-4d6c-9585-98b42972026d",
+   "configurationUrl":"https://ksms.amdtelecom.net/mfa/config.php",
+   "configurationCallRetryDelay":5,
+   "configurationCallRetries":3,
+   "smsOtpType":"simple",
+   "fireBaseConsumer":"https://ksms.amdtelecom.net/mfa/fireConsumer.php",
+   "fireBaseConsumerRetryDelay":5,
+   "fireBaseConsumerCallRetries":3,
+   "mainystem":"https://ksms.amdtelecom.net/mfa/main.php",
+   "mainystemRetryDelay":5,
+   "mainSystemCallRetries":3,
+   "hostedSystem":"https://ksms.amdtelecom.net/mfa/hosted.php",
+   "hostedMFASystemRetryDelay":5,
+   "hostedMFASystemCallRetries":3
+}

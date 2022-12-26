@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="otp_header">Provide the verification pin you received</string>
+    <string name="submit">Submit</string>
+    <string name="accept">Accept</string>
+    <string name="deny">Deny</string>
+    <string name="title" translatable="false">Title</string>
+</resources>

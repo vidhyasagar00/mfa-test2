@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/android-mfa/mfa/src/main/res/drawable/rectangle.xml" value="0.20833333333333334" />
+        <entry key="..\:/android-mfa/mfa/src/main/res/drawable/rectangle_top_corners.xml" value="0.20833333333333334" />
+        <entry key="..\:/android-mfa/mfa/src/main/res/layout/activity_web_view.xml" value="0.25" />
+        <entry key="..\:/android-mfa/mfa/src/main/res/layout/authentication_dialog.xml" value="0.22" />
+        <entry key="..\:/android-mfa/mfa/src/main/res/layout/custom_progress_dialog.xml" value="0.1765625" />
+        <entry key="..\:/android-mfa/mfa/src/main/res/layout/otp_validation_xml.xml" value="0.1921875" />
+        <entry key="..\:/android-mfa/mfa/src/main/res/layout/phone_number_dialog_box.xml" value="0.25" />
+        <entry key="..\:/android-mfa/mfa/src/main/res/layout/pop_up_for_access_token.xml" value="0.1921875" />
+        <entry key="..\:/android-mfa/mfa/src/main/res/layout/success_failute_dialog.xml" value="0.2" />
+        <entry key="..\:/android-mfa/mfaSampleApp/src/main/res/layout/activity_location_list.xml" value="0.1921875" />
+        <entry key="..\:/android-mfa/mfaSampleApp/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/android-mfa/mfaSampleApp/src/main/res/layout/custom_progress_dialog.xml" value="0.33" />
+        <entry key="..\:/android-mfa/mfaSampleApp/src/main/res/layout/location_list_item.xml" value="0.1921875" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

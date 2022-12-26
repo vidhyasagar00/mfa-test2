@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:text="@string/otp_header"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rectangle"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/textBox"
+        android:layout_width="wrap_content"
+        android:minWidth="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:maxLength="4"
+        android:gravity="center"
+        android:letterSpacing="1"
+        android:padding="10dp"
+        android:labelFor="@id/textBox"
+        android:autofillHints="For otp detection" />
+    <Button
+        android:id="@+id/submitBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="@string/submit"
+        android:background="@drawable/rectangle"
+        app:layout_constraintTop_toBottomOf="@id/textBox"
+        android:paddingHorizontal="30dp"
+        android:textAllCaps="false"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:shadowColor="@android:color/black"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

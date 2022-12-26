@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="otp_header">Δώστε την καρφίτσα επαλήθευσης που λάβατε</string>
+    <string name="submit">υποβάλλουν</string>
+    <string name="accept">Αποδέχομαι</string>
+    <string name="deny">Αρνούμαι</string>
+</resources>

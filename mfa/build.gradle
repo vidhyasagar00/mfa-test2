@@ -1,0 +1,94 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
+    id 'maven-publish'
+}
+
+android {
+    packagingOptions {
+        resources.excludes.add("META-INF/*")
+    }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+    compileSdk 32
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 32
+        versionCode 3
+        versionName "1.0"
+        consumerProguardFiles "consumer-rules.pro"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation "androidx.fragment:fragment-ktx:1.5.5"
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // dependency for push notifications
+    implementation 'com.google.firebase:firebase-messaging:23.0.8'
+
+    // dependency for bio metric authentication
+    implementation "androidx.biometric:biometric:1.1.0"
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+
+    // dependency for play services to otp detection
+    implementation 'com.google.android.gms:play-services-auth:20.4.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.0.1'
+    implementation 'com.google.firebase:firebase-crashlytics-buildtools:2.9.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // dependency for unit tests
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.0"
+    androidTestImplementation "io.mockk:mockk-android:1.11.0"
+    androidTestImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.0"
+    androidTestImplementation "io.insert-koin:koin-test-junit4:3.0.2"
+    androidTestImplementation "com.google.truth:truth:1.1.2"
+    debugImplementation "androidx.fragment:fragment-testing:1.5.5"
+
+    // retrofit libraries
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    // Dependency for Android instrumentation tests.
+    androidTestImplementation "com.squareup.okhttp3:mockwebserver:4.9.1"
+
+    // room database
+    implementation "androidx.room:room-runtime:2.4.3"
+    kapt "androidx.room:room-compiler:2.4.3"
+    implementation "androidx.room:room-ktx:2.4.3"
+
+}
+
+//afterEvaluate {
+//    android.libraryVariants.each { variant ->
+//        publishing.publications.create(variant.name, MavenPublication) {
+//            from components.findByName(variant.name)
+//
+//            //com.net.routee:mfa:1.0.0
+//            groupId 'com.net.routee'
+//            artifactId = 'mfa'
+//            version '1.0.0'
+//        }
+//    }
+//}
